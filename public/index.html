@@ -1,0 +1,1178 @@
+
+<!DOCTYPE html>
+<html lang="en-AU">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Is Datto down? Check current problems and outages!</title>
+    <meta name="description" content="Issues with accessing Datto? Check the most up-to-date status on outages and problems experienced by others." />
+
+    <meta property="og:title" content="Is Datto down? Check current problems and outages!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://downau.com/status/datto.com" />     
+    <meta property="og:description" content="Issues with accessing Datto? Check the most up-to-date status on outages and problems experienced by others." /> 
+    <meta name="theme-color" content="#f8f9fa" />
+    
+            <script type="application/ld+json">
+        {"@context":"http://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Did Datto go down?","acceptedAnswer":{"@type":"Answer","text":"We have recently sent browser requests to Datto.com and it's up and running with status code 200 (UP)\r\n    and a response time of 244 ms. We recommend clearing your cache or restarting/updating your app."}},{"@type":"Question","name":"Why is Datto so slow?","acceptedAnswer":{"@type":"Answer","text":"If your Datto, is running slow, it could be because of various reasons such as an old version, bad internet connectivity, or it could not be working properly with your device.\r\nWe suggest updating it and disabling extensions or ad-blockers. You can also try using a different browser."}},{"@type":"Question","name":"Why do I keep getting error messages?","acceptedAnswer":{"@type":"Answer","text":"If you see an error message from Datto, it could be because of different problems such as server issues, outdated software, or compatibility problems.\r\nTo fix it, check if there is an update available for the app or website. Also, make sure your device's software is up to date."}},{"@type":"Question","name":"Can you explain HTTP response status codes?","acceptedAnswer":{"@type":"Answer","text":"HTTP response status code is a 3-digit number that tells you if a request to a website or app was successful or not.\r\nThere are four types of codes: 2XX (successful), 3XX (redirect), 4XX (browser error), and 5XX (server error).\r\nThese codes help developers and users know what's happening and what to do next if there's a problem."}},{"@type":"Question","name":"What does \"HTTP response time\" mean?","acceptedAnswer":{"@type":"Answer","text":"The HTTP response time technically measures how much time it takes for a website to load after you click on a link or type in its web address.\r\nKnowing about HTTP response time can help you identify slow-loading websites and take action to improve your browsing experience."}},{"@type":"Question","name":"Why is my app or website not loading any content/media?","acceptedAnswer":{"@type":"Answer","text":"When you can't load any content on Datto, it might be due to slow internet or issues with the content provider. Try to reset your router to improve your connectivity."}},{"@type":"Question","name":"Why am I having issues during peak usage times?","acceptedAnswer":{"@type":"Answer","text":"When many people are using Datto's app or website at the same time, it can cause issues. Try using it again during less busy times. You can also try using Incognito mode to see if it works."}},{"@type":"Question","name":"Why am I the only one having trouble accessing my app or website?","acceptedAnswer":{"@type":"Answer","text":"Sometimes, you may have trouble using it due to issues with its code or design. Try changing your device's accessibility settings or you can also try using a different browser or device."}},{"@type":"Question","name":"Why can't I log in or access my account?","acceptedAnswer":{"@type":"Answer","text":"It could be because of wrong login information or problems with the app or website's code. Try resetting your password, checking your login details, or reaching out to their customer support for help."}},{"@type":"Question","name":"What else can I do if the problem still exists after trying all the tips here?","acceptedAnswer":{"@type":"Answer","text":"If all else fails, please feel free to report the problem to us so we can investigate it further. You may also check if other users are facing the same issue on our website."}}]}        </script>
+    
+            <script type="application/ld+json">
+        {"@context":"http://schema.org","@type":"Organization","name":"Datto","brand":"Datto","url":"https://www.datto.com/","logo":["https://downau.com/static/logos/datto.com-logo.png"],"description":"Datto is a data protection provider that offers comprehensive backup, recovery and business continuity solutions to organizations of all sizes. Its cloud-based services are designed to protect data and ensure businesses can recover quickly from any disruption. Datto's solutions are reliable, secure and cost-effective.","review":{"@type":"Review","reviewRating":{"@type":"Rating","worstRating":"0","ratingValue":3,"bestRating":"5"},"author":{"@type":"Organization","brand":"DownStatus FR","name":"DownStatus FR"}},"aggregateRating":{"@type":"AggregateRating","worstRating":"0","ratingValue":3,"ratingCount":1,"bestRating":"5"}}        </script>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- Lazysizes script -->
+    <script src="https://downau.com/static/js/lazysizes.min.js" async=""></script>
+    
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+    <!-- Circle script -->
+    <script type="text/javascript" src="https://downau.com/static/js/circleGrath.js" rel="stylesheet"></script>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://downau.com/static/css/bootstrap5.css">
+    <link rel="stylesheet" href="https://downau.com/static/css/style.min.css">
+    <link rel="stylesheet" href="https://downau.com/static/css/report-problem.css">
+    <link rel="manifest" href="https://downau.com/static/ex/manifest.json" crossorigin="use-credentials">
+    <link rel="apple-touch-icon" href="https://downau.com/static/img/apple-touch-icon.png">
+    <link rel="shortcut icon" href="https://downau.com/static/img/downau.ico" type="image/x-icon">
+    <link rel="icon" href="https://downau.com/static/img/downau.ico" type="image/x-icon">
+    
+  </head>
+  <body>
+
+    <!-- menu -->
+    <nav id="box-menu" class="navbar navbar-expand-lg">
+        <div class="container">
+            <section class="row">
+                <a class="navbar-brand" href="https://downau.com">
+                    <img class="float-start me-2 lazyload" data-src="https://downau.com/static/img/downau_site-logo.png" alt="DownAU Logo" width="50" height="50">
+                    <p id="name-site" class="float-start">DownAU</p>
+                </a>                    
+            </section>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>        
+            <section id="navbarSupportedContent" class="collapse navbar-collapse navbar-menu">
+                <form id='header-search' action='https://downau.com/search' method="post" role="search">
+                    <input name="q" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button id="button-search" class="btn btn-primary" type="submit">Check Website</button>
+                </form>
+                <ul class="navbar-nav">
+                    <li>
+                        <a class="menu-link" href="https://downau.com/about">About</a>
+                    </li>                      
+                    <li>
+                        <a class="menu-link" href="https://downau.com/privacy">Privacy</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </nav>
+    <!-- end menu --> 
+ 
+ 
+ 
+
+<!-- main container -->
+<div class="container-xxl">
+            <div class="row">
+
+                <!-- left bar -->
+                <div id="main-content" class="col-8">
+                    <article class="row">
+                        <div class="col">
+                            <div class="row">
+                                <div class="major-title">
+                                                                                                                                                <h1 class="float-start">Is Datto.com down - April, 2023?</h1>                             
+                                </div> 
+                            </div>
+                            <div class="row">
+                                <div>
+                                                                        <span class="float-start me-2">Datto  Outages and Status</span>                                                                     
+                                </div>         
+                            </div> 
+                        
+                            <div id="company-block">
+                                <div id="company-block__row" class="row mt-2 mb-2">
+                                    <div id ="company-block__col" class="col-12 text-center">
+                                                                                    <img id="company-img" class="lazyload" data-src="https://downau.com/static/logos/datto.com-logo.png" alt="Datto Logo">
+                                                                                
+                                        <div id="company-text__block">
+                                                                                        <div class="row">
+                                                <p class="company-text"><span class="span-small">Datto is a data protection provider that offers comprehensive backup, recovery and business continuity solutions to organizations of all sizes. Its cloud-based services are designed to protect data and ensure businesses can recover quickly from any disruption. Datto's solutions are reliable, secure and cost-effective.</span></p>
+                                            </div>
+                                                                                    </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div> 
+
+                        </div>
+                    </article>
+
+                                        <article class="row server-status">
+                            <div id="divButton" class="col-4">
+                                <button type="button" id="blockButton" class="btn btn-outline-secondary" disabled>
+                                    <p class="mb-2 pb-2">Server status</p>                                   
+                                                                        <span style="color: #48bb48; font-size: 18px; font-weight: 600;">Up</span>
+                                                                    </button>                                                             
+                            </div>
+                            <div class="col-8 blockHoverRow">
+                                <div class="row">
+                                                                        <form action="https://downau.com/check-website-response-time/datto.com" method="post">
+                                    <input type="hidden" name="token" value="8323881364c54dbf6cf770ee0a1f1faf8ad44b40bac48bd45d9a18c5ab882bd8c050b1">
+                                    <p id="pLastCheck" class="float-end mt-1"><span class="span-small">Last check: Just Now | </span>
+                                        <button type="submit" class="aButton btn btn-sm">Check Again</button>
+                                    </p>
+                                    </form>
+                                                                    </div>
+                                <div class="row hoverRow">
+                                    <div class="col-7 border-bottom">
+                                        <svg class="float-start me-2 svgImg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M1.543 7.25h2.733c.144-2.074.866-3.756 1.58-4.948.12-.197.237-.381.353-.552a6.506 6.506 0 00-4.666 5.5zm2.733 1.5H1.543a6.506 6.506 0 004.666 5.5 11.13 11.13 0 01-.352-.552c-.715-1.192-1.437-2.874-1.581-4.948zm1.504 0h4.44a9.637 9.637 0 01-1.363 4.177c-.306.51-.612.919-.857 1.215a9.978 9.978 0 01-.857-1.215A9.637 9.637 0 015.78 8.75zm4.44-1.5H5.78a9.637 9.637 0 011.363-4.177c.306-.51.612-.919.857-1.215.245.296.55.705.857 1.215A9.638 9.638 0 0110.22 7.25zm1.504 1.5c-.144 2.074-.866 3.756-1.58 4.948-.12.197-.237.381-.353.552a6.506 6.506 0 004.666-5.5h-2.733zm2.733-1.5h-2.733c-.144-2.074-.866-3.756-1.58-4.948a11.738 11.738 0 00-.353-.552 6.506 6.506 0 014.666 5.5zM8 0a8 8 0 100 16A8 8 0 008 0z"></path></svg>
+                                        <p class="float-start"><span>URL Checked:</span></p>
+                                    </div>
+                                    <div class="col-5 border-bottom">
+                                        <p class="float-end" style="color: #48bb48;">https://www.datto.com/</p>
+                                    </div>  
+                                </div>
+                                <div class="row hoverRow">
+                                    <div class="col-5 border-bottom">
+                                        <svg class="float-start me-2 svgImg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M7.47 10.78a.75.75 0 001.06 0l3.75-3.75a.75.75 0 00-1.06-1.06L8.75 8.44V1.75a.75.75 0 00-1.5 0v6.69L4.78 5.97a.75.75 0 00-1.06 1.06l3.75 3.75zM3.75 13a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5z"></path></svg>
+                                        <p class="float-start"><span>Last Down:</span></p>
+                                    </div>
+                                    <div class="col-7 border-bottom">
+                                                                                    <p class="float-end" style="color: #48bb48;">not recently</p>
+                                                                                   
+                                    </div>                                                                  
+                                </div>
+                                <div class="row hoverRow">
+                                    <div class="col-7 border-bottom">
+                                        <svg class="float-start me-2 svgImg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z"></path></svg>
+                                        <p class="float-start"><span>Response Time:</span></p>
+                                    </div>
+                                    <div class="col-5 border-bottom">
+                                                                                    <p class="float-end" style="color: #48bb48;">244 ms.</p>
+                                                                                
+                                    </div>  
+                                </div>
+                            </div>                           
+                    </article>  
+                                                            
+                    <!-- Modal content with button --> 
+                    <article> 
+                    
+                    <script>
+                    let itemList = [{"button_id":1840,"button_label":"Website"},{"button_id":1841,"button_label":"Login"},{"button_id":1842,"button_label":"Server Connection"}];
+
+                    let dUrl = 'https://downau.com';   
+                    let pUrl =  '/report-issue/';
+                    let comUrl =  '/comment-save/';
+                    let com_serviceId = '359';
+                    let serviceId = '359/';
+                    let token = '8323881364c54dbf6cf770ee0a1f1faf8ad44b40bac48bd45d9a18c5ab882bd8c050b1';   
+                    </script>
+                                            <div class="row">
+                            <div id="help-block" class="col-8 col-md-6"> 
+                                <div id="report-problem"></div>               
+                                <button type="button" id="comments-button" class="btn btn-light"><a href="#comment_content">Check Comments</a></button>                     
+                            </div>
+                        </div>
+                                               
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h2 class="modal-title" id="exampleModalLabel">Report an issue</h2>
+                                <button type="button" class="btn-modal-close btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div id="modal-body-id"  class="modal-body">
+                                    <div class="row mb-5 mt-2">
+                                        <div class="col">
+                                                                                    <div class="row">
+                                                <div class="col-5 pb-2">
+                                                    <button data-id="1840" type="button" class="rowButton report btn btn-danger ms-2" style="width: 200px;">Website</button>
+                                                </div>                                             
+                                            </div>
+                                                                                    <div class="row">
+                                                <div class="col-5 pb-2">
+                                                    <button data-id="1841" type="button" class="rowButton report btn btn-danger ms-2" style="width: 200px;">Login</button>
+                                                </div>                                             
+                                            </div>
+                                                                                    <div class="row">
+                                                <div class="col-5 pb-2">
+                                                    <button data-id="1842" type="button" class="rowButton report btn btn-danger ms-2" style="width: 200px;">Server Connection</button>
+                                                </div>                                             
+                                            </div>
+                                             
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="thankyou" class="modal-thankyou" style="display: none;">
+                                    <div class="row mb-5 mt-2 ms-2">
+                                        <div class="col">
+                                            <p>Thank You For Feedback!</p> 
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal-footer">
+                                <button type="button" class="btn-modal-close btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+              
+                    </article>
+
+                    
+                    <!-- end Modal content with button --> 
+
+                    <!-- Graph Box -->
+                    <article class="row mt-3">
+                        <div class="row mt-4 border-bottom border-2">
+                                                        <h2 class="title-min">datto.com outages reported by users in the last 24 hours</h2>
+                            
+                        </div>
+                                                    <div id="alertReportHaveProblem" class="row mt-2 border border-danger text-center">
+                                <p class="statusDown">Possible <strong>Datto</strong> outages reported in the last 24 hours!</p>
+                            </div>                            
+                        
+                        <!-- Graph -->
+                        <div class="row">
+                            <div class="col">
+                                <div id="outageReports" style="height: 250px;"></div> 
+                            </div>                           
+                        </div>
+                        
+                        <script type='text/javascript'>
+                            // <![CDATA[
+                            new Morris.Area({
+                                element: 'outageReports',
+                                data: [                             
+                                        { date: '2023-04-20 09:06:18', value: 0, date_formatted: '09:06' },{ date: '2023-04-20 09:16:18', value: 0, date_formatted: '09:16' },{ date: '2023-04-20 09:26:18', value: 0, date_formatted: '09:26' },{ date: '2023-04-20 09:36:18', value: 0, date_formatted: '09:36' },{ date: '2023-04-20 09:46:18', value: 0, date_formatted: '09:46' },{ date: '2023-04-20 09:56:18', value: 0, date_formatted: '09:56' },{ date: '2023-04-20 10:06:18', value: 0, date_formatted: '10:06' },{ date: '2023-04-20 10:16:18', value: 0, date_formatted: '10:16' },{ date: '2023-04-20 10:26:18', value: 0, date_formatted: '10:26' },{ date: '2023-04-20 10:36:18', value: 0, date_formatted: '10:36' },{ date: '2023-04-20 10:46:18', value: 0, date_formatted: '10:46' },{ date: '2023-04-20 10:56:18', value: 0, date_formatted: '10:56' },{ date: '2023-04-20 11:06:18', value: 1, date_formatted: '11:06' },{ date: '2023-04-20 11:16:18', value: 0, date_formatted: '11:16' },{ date: '2023-04-20 11:26:18', value: 0, date_formatted: '11:26' },{ date: '2023-04-20 11:36:18', value: 0, date_formatted: '11:36' },{ date: '2023-04-20 11:46:18', value: 0, date_formatted: '11:46' },{ date: '2023-04-20 11:56:18', value: 0, date_formatted: '11:56' },{ date: '2023-04-20 12:06:18', value: 0, date_formatted: '12:06' },{ date: '2023-04-20 12:16:18', value: 0, date_formatted: '12:16' },{ date: '2023-04-20 12:26:18', value: 0, date_formatted: '12:26' },{ date: '2023-04-20 12:36:18', value: 0, date_formatted: '12:36' },{ date: '2023-04-20 12:46:18', value: 0, date_formatted: '12:46' },{ date: '2023-04-20 12:56:18', value: 0, date_formatted: '12:56' },{ date: '2023-04-20 13:06:18', value: 1, date_formatted: '13:06' },{ date: '2023-04-20 13:16:18', value: 0, date_formatted: '13:16' },{ date: '2023-04-20 13:26:18', value: 0, date_formatted: '13:26' },{ date: '2023-04-20 13:36:18', value: 0, date_formatted: '13:36' },{ date: '2023-04-20 13:46:18', value: 0, date_formatted: '13:46' },{ date: '2023-04-20 13:56:18', value: 0, date_formatted: '13:56' },{ date: '2023-04-20 14:06:18', value: 0, date_formatted: '14:06' },{ date: '2023-04-20 14:16:18', value: 0, date_formatted: '14:16' },{ date: '2023-04-20 14:26:18', value: 0, date_formatted: '14:26' },{ date: '2023-04-20 14:36:18', value: 0, date_formatted: '14:36' },{ date: '2023-04-20 14:46:18', value: 0, date_formatted: '14:46' },{ date: '2023-04-20 14:56:18', value: 0, date_formatted: '14:56' },{ date: '2023-04-20 15:06:18', value: 0, date_formatted: '15:06' },{ date: '2023-04-20 15:16:18', value: 0, date_formatted: '15:16' },{ date: '2023-04-20 15:26:18', value: 0, date_formatted: '15:26' },{ date: '2023-04-20 15:36:18', value: 0, date_formatted: '15:36' },{ date: '2023-04-20 15:46:18', value: 0, date_formatted: '15:46' },{ date: '2023-04-20 15:56:18', value: 0, date_formatted: '15:56' },{ date: '2023-04-20 16:06:18', value: 0, date_formatted: '16:06' },{ date: '2023-04-20 16:16:18', value: 0, date_formatted: '16:16' },{ date: '2023-04-20 16:26:18', value: 0, date_formatted: '16:26' },{ date: '2023-04-20 16:36:18', value: 0, date_formatted: '16:36' },{ date: '2023-04-20 16:46:18', value: 0, date_formatted: '16:46' },{ date: '2023-04-20 16:56:18', value: 0, date_formatted: '16:56' },{ date: '2023-04-20 17:06:18', value: 0, date_formatted: '17:06' },{ date: '2023-04-20 17:16:18', value: 0, date_formatted: '17:16' },{ date: '2023-04-20 17:26:18', value: 0, date_formatted: '17:26' },{ date: '2023-04-20 17:36:18', value: 0, date_formatted: '17:36' },{ date: '2023-04-20 17:46:18', value: 0, date_formatted: '17:46' },{ date: '2023-04-20 17:56:18', value: 0, date_formatted: '17:56' },{ date: '2023-04-20 18:06:18', value: 0, date_formatted: '18:06' },{ date: '2023-04-20 18:16:18', value: 0, date_formatted: '18:16' },{ date: '2023-04-20 18:26:18', value: 0, date_formatted: '18:26' },{ date: '2023-04-20 18:36:18', value: 0, date_formatted: '18:36' },{ date: '2023-04-20 18:46:18', value: 0, date_formatted: '18:46' },{ date: '2023-04-20 18:56:18', value: 0, date_formatted: '18:56' },{ date: '2023-04-20 19:06:18', value: 0, date_formatted: '19:06' },{ date: '2023-04-20 19:16:18', value: 0, date_formatted: '19:16' },{ date: '2023-04-20 19:26:18', value: 0, date_formatted: '19:26' },{ date: '2023-04-20 19:36:18', value: 0, date_formatted: '19:36' },{ date: '2023-04-20 19:46:18', value: 0, date_formatted: '19:46' },{ date: '2023-04-20 19:56:18', value: 0, date_formatted: '19:56' },{ date: '2023-04-20 20:06:18', value: 0, date_formatted: '20:06' },{ date: '2023-04-20 20:16:18', value: 0, date_formatted: '20:16' },{ date: '2023-04-20 20:26:18', value: 0, date_formatted: '20:26' },{ date: '2023-04-20 20:36:18', value: 0, date_formatted: '20:36' },{ date: '2023-04-20 20:46:18', value: 0, date_formatted: '20:46' },{ date: '2023-04-20 20:56:18', value: 0, date_formatted: '20:56' },{ date: '2023-04-20 21:06:18', value: 0, date_formatted: '21:06' },{ date: '2023-04-20 21:16:18', value: 0, date_formatted: '21:16' },{ date: '2023-04-20 21:26:18', value: 0, date_formatted: '21:26' },{ date: '2023-04-20 21:36:18', value: 0, date_formatted: '21:36' },{ date: '2023-04-20 21:46:18', value: 0, date_formatted: '21:46' },{ date: '2023-04-20 21:56:18', value: 0, date_formatted: '21:56' },{ date: '2023-04-20 22:06:18', value: 0, date_formatted: '22:06' },{ date: '2023-04-20 22:16:18', value: 0, date_formatted: '22:16' },{ date: '2023-04-20 22:26:18', value: 0, date_formatted: '22:26' },{ date: '2023-04-20 22:36:18', value: 0, date_formatted: '22:36' },{ date: '2023-04-20 22:46:18', value: 0, date_formatted: '22:46' },{ date: '2023-04-20 22:56:18', value: 0, date_formatted: '22:56' },{ date: '2023-04-20 23:06:18', value: 0, date_formatted: '23:06' },{ date: '2023-04-20 23:16:18', value: 0, date_formatted: '23:16' },{ date: '2023-04-20 23:26:18', value: 0, date_formatted: '23:26' },{ date: '2023-04-20 23:36:18', value: 0, date_formatted: '23:36' },{ date: '2023-04-20 23:46:18', value: 0, date_formatted: '23:46' },{ date: '2023-04-20 23:56:18', value: 0, date_formatted: '23:56' },{ date: '2023-04-21 00:06:18', value: 0, date_formatted: '00:06' },{ date: '2023-04-21 00:16:18', value: 0, date_formatted: '00:16' },{ date: '2023-04-21 00:26:18', value: 0, date_formatted: '00:26' },{ date: '2023-04-21 00:36:18', value: 0, date_formatted: '00:36' },{ date: '2023-04-21 00:46:18', value: 0, date_formatted: '00:46' },{ date: '2023-04-21 00:56:18', value: 0, date_formatted: '00:56' },{ date: '2023-04-21 01:06:18', value: 0, date_formatted: '01:06' },{ date: '2023-04-21 01:16:18', value: 0, date_formatted: '01:16' },{ date: '2023-04-21 01:26:18', value: 0, date_formatted: '01:26' },{ date: '2023-04-21 01:36:18', value: 0, date_formatted: '01:36' },{ date: '2023-04-21 01:46:18', value: 0, date_formatted: '01:46' },{ date: '2023-04-21 01:56:18', value: 0, date_formatted: '01:56' },{ date: '2023-04-21 02:06:18', value: 0, date_formatted: '02:06' },{ date: '2023-04-21 02:16:18', value: 0, date_formatted: '02:16' },{ date: '2023-04-21 02:26:18', value: 0, date_formatted: '02:26' },{ date: '2023-04-21 02:36:18', value: 0, date_formatted: '02:36' },{ date: '2023-04-21 02:46:18', value: 0, date_formatted: '02:46' },{ date: '2023-04-21 02:56:18', value: 0, date_formatted: '02:56' },{ date: '2023-04-21 03:06:18', value: 0, date_formatted: '03:06' },{ date: '2023-04-21 03:16:18', value: 0, date_formatted: '03:16' },{ date: '2023-04-21 03:26:18', value: 0, date_formatted: '03:26' },{ date: '2023-04-21 03:36:18', value: 0, date_formatted: '03:36' },{ date: '2023-04-21 03:46:18', value: 0, date_formatted: '03:46' },{ date: '2023-04-21 03:56:18', value: 0, date_formatted: '03:56' },{ date: '2023-04-21 04:06:18', value: 0, date_formatted: '04:06' },{ date: '2023-04-21 04:16:18', value: 0, date_formatted: '04:16' },{ date: '2023-04-21 04:26:18', value: 0, date_formatted: '04:26' },{ date: '2023-04-21 04:36:18', value: 0, date_formatted: '04:36' },{ date: '2023-04-21 04:46:18', value: 0, date_formatted: '04:46' },{ date: '2023-04-21 04:56:18', value: 0, date_formatted: '04:56' },{ date: '2023-04-21 05:06:18', value: 0, date_formatted: '05:06' },{ date: '2023-04-21 05:16:18', value: 0, date_formatted: '05:16' },{ date: '2023-04-21 05:26:18', value: 0, date_formatted: '05:26' },{ date: '2023-04-21 05:36:18', value: 0, date_formatted: '05:36' },{ date: '2023-04-21 05:46:18', value: 0, date_formatted: '05:46' },{ date: '2023-04-21 05:56:18', value: 0, date_formatted: '05:56' },{ date: '2023-04-21 06:06:18', value: 0, date_formatted: '06:06' },{ date: '2023-04-21 06:16:18', value: 0, date_formatted: '06:16' },{ date: '2023-04-21 06:26:18', value: 0, date_formatted: '06:26' },{ date: '2023-04-21 06:36:18', value: 0, date_formatted: '06:36' },{ date: '2023-04-21 06:46:18', value: 0, date_formatted: '06:46' },{ date: '2023-04-21 06:56:18', value: 0, date_formatted: '06:56' },{ date: '2023-04-21 07:06:18', value: 0, date_formatted: '07:06' },{ date: '2023-04-21 07:16:18', value: 0, date_formatted: '07:16' },{ date: '2023-04-21 07:26:18', value: 0, date_formatted: '07:26' },{ date: '2023-04-21 07:36:18', value: 0, date_formatted: '07:36' },{ date: '2023-04-21 07:46:18', value: 0, date_formatted: '07:46' },{ date: '2023-04-21 07:56:18', value: 0, date_formatted: '07:56' },{ date: '2023-04-21 08:06:18', value: 0, date_formatted: '08:06' },{ date: '2023-04-21 08:16:18', value: 0, date_formatted: '08:16' },{ date: '2023-04-21 08:26:18', value: 0, date_formatted: '08:26' },{ date: '2023-04-21 08:36:18', value: 0, date_formatted: '08:36' },{ date: '2023-04-21 08:46:18', value: 0, date_formatted: '08:46' },{ date: '2023-04-21 08:56:18', value: 0, date_formatted: '08:56' },{ date: '2023-04-21 09:06:18', value: 0, date_formatted: '09:06' },{ date: '2023-04-21 09:16:18', value: 0, date_formatted: '09:16' },{ date: '2023-04-21 09:26:18', value: 0, date_formatted: '09:26' },                                                                
+                                ],
+                                pointSize: 0,
+                                ymax: 'auto 1',
+                                xkey: 'date',
+                                ykeys: ['value'],
+                                lineColors: [ '#FBBFBF' ],
+                                goals: [12],
+                                goalLineColors: ['#FF5733'],
+                                labels: ['Value'],
+                                yLabelFormat: function (y) { return parseInt(y).toString(); },
+                                hoverCallback: function (index, options) {
+                                var row = options.data[index];
+                                if (row.value > 1) {
+                                    return row.value+' outages ('+row.date_formatted+')'; 
+                                } else if (row.value == 1) {                                    
+                                    return '1 outage ('+row.date_formatted+')';                                    
+                                }
+                                return 'No outages reported';
+                                },
+                            });
+
+                            // ]]>
+                            </script>                       
+
+                        <!-- end Graph -->
+
+                        <div id="spanGrath" class="row">
+                            <p><span class="span-small">
+                            This chart shows the number of <strong>Datto</strong> outages/problems reported by users in the past 24 hours. All data in the chart is in the <strong>UTC</strong> time zone.</span></p>
+                        </div> 
+                    </article>
+                    <!-- end Graph Box -->
+        
+                                        <article class="row mt-3">
+                        <div class="col-2"></div>
+                        <div id="blockReportedLocations" class="col-8">
+                            <div class="row border-bottom border-2">
+                                <h3 class="title-min">Datto Outage Locations</h3>
+                            </div>
+                            <div class="row title-row border-bottom border-2">
+                                <div class="col">
+                                    <p class="float-start"><strong>Location</strong></p>
+                                </div>
+                                <div class="col">
+                                    <p class="float-end"><strong>Reports</strong></p>
+                                </div> 
+                                <div class="col">
+                                    <p class="float-end"><strong>Last Reported</strong></p>
+                                </div>                              
+                            </div>
+                                                        <div class="row border-bottom">
+                                <div class="col-7 tableRow">
+                                    
+                                        <img src="https://downau.com/static/flags/by.svg" alt="BY Flag Icon" width="18" height="16" class="float-start">
+                                        <p class="alignCenter"><span>Vitebsk, Vitsyebskaya voblasts', BY</span></p>
+                                    
+                                </div> 
+                                <div class="col-1 tableRow text-center">
+                                    <p class="float-none"><span>1</span></p></div>
+                                <div class="col-4 tableRow">
+                                                                        <p class="float-end"><span>21 hours ago</span></p>
+                                </div>                                                                                                                              
+                            </div>
+                                                    </div>
+                        <div class="col-2"></div>                       
+                    </article>
+                    
+                                        <!-- circle -->
+                    <article class="row mt-1">
+                        <div class="col mt-3 border border-3">
+                            <div class="row mt-4">
+                                <h3 class="title-min">Most common Datto problems reported by users</h3>
+                            </div>
+                            <div class="circleBlock">
+                                <div class="row">                                    
+                                                                        <div class="col colCircle">
+                                            <div class="circle" id="server-connection-circle">
+                                                <div class="circleInner">
+                                                    <span id="server-connection-circle-counter">100</span>
+                                                </div>
+                                            </div>
+                                            <div class="col text-center">
+                                                <p>Server Connection</p>
+                                            </div>
+                                        </div>
+                                        <script>draw_circle("server-connection", 100);</script>                                     
+                                                                          
+                                </div>
+                            </div>                          
+                        </div>
+                    </article>
+                    <!-- end circle -->
+                    
+                    <article class="row mt-1">
+                        <div class="yellowBox col mt-5">                 
+                            <div class="row mt-5 ms-2">
+                                <h2 class="title-min">Are you experiencing issues with Datto right now?</h2>
+                            </div>
+                            <div class="row mt-2 mx-3">
+                                                                <p>Is datto.com not working for you? If you are having issues with Datto, please use one of the options below to report a problem with the service</p> 
+                            </div>
+                            <div id="reportproblemeasy" class="row mb-5 mt-3"></div>
+                            <div id="rowButtons" class="row mb-5 mt-3">
+                                <div style="text-align: center">
+                                                                                                    
+                                    <button data-id="1840" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" class="rowButton report btn btn-danger ms-2 mt-2">Website</button>                                     
+                                                                                                         
+                                                                
+                                    <button data-id="1841" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" class="rowButton report btn btn-danger ms-2 mt-2">Login</button>                                     
+                                                                                                         
+                                                                
+                                    <button data-id="1842" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" class="rowButton report btn btn-danger ms-2 mt-2">Server Connection</button>                                     
+                                                                                                         
+                                 
+                                </div> 
+                            </div>
+                        </div>
+                    </article>
+
+                    <script type="text/javascript">
+
+                        var mu = 'https://downau.com';
+                        var mp = '/report-issue/359/';
+                            
+                        $(".btn-modal-close").on("click", function (event) {
+                            $('#thankyou').hide();
+                            $('#modal-body-id').show();
+                        });
+
+                        $(".report").on("click", function (event) {
+                            
+
+                            $('#modal-body-id').hide();
+                            
+                            var request;
+                            var issue_type_id = $(event.target).attr("data-id");  
+                            //console.log('click' + issue_type_id);
+
+                            request = $.ajax({
+                                url: mu + mp + issue_type_id,
+                                method: "POST",
+                                data:
+                                {
+                                    token: "8323881364c54dbf6cf770ee0a1f1faf8ad44b40bac48bd45d9a18c5ab882bd8c050b1"
+                                },
+                                datatype: "json"
+                            });
+                            request.done(function(msg) {
+                                $('#thankyou').show();
+                                console.log(msg);
+                            });
+                            request.fail(function(jqXHR, textStatus) {
+                                $("#result").html("Request failed");
+                                //var err = eval("(" + jqXHR.responseText + ")");
+                                console.log(jqXHR.responseText);
+                            });
+                        });
+
+
+                        </script>
+        
+                                                            <article class="row mt-5">
+                        <div class="col-xl-8 col-lg-12 mx-auto">
+                            <div class="row border-bottom border-2">
+                                <h3 class="title-min">Datto.com website response status history</h3>
+                            </div>       
+                            <div class="row border-bottom border-2" style="background-image: linear-gradient(#eceff6, white);">
+                                <div class="data col-4">
+                                    <p class="float-start ps-md-4 ps-0"><strong>Date and Time</strong></p>
+                                
+                                </div>
+                                <div class="response col-4">
+                                    <p class="float-start ps-md-4 ps-0"><strong>Response Time</strong></p>
+                                </div>
+                                <div class="status col-4">
+                                    <p id="tableTitleStatus" class="float-end pe-md-5 ps-0"><strong>Status Code</strong></p>
+                                </div>                                                                                                                                                                
+                            </div>
+                                                            
+                                                                                                
+                            <div class="row tableRow bg-light">
+                                <div class="tableRowData col-5 col-md-4">
+                                    <p class="float-start ps-xl-2 ps-md-0"><span>20 Apr 2023 - 12:05</span></p>
+                                </div>
+                                <div class="col-3 col-md-4">
+                                    <p class="float-end pe-xl-5 pe-lg-5 pe-md-5"><span class="statusUp">244 ms.</span></p>
+                                </div>
+                                <div class="col-4 col-md-4">
+                                    <p class="text-success float-end pe-5"><span class="statusUp">200</span></p> 
+                                </div>                               
+                            </div>
+                                                            
+                                                                                                
+                            <div class="row tableRow bg-light">
+                                <div class="tableRowData col-5 col-md-4">
+                                    <p class="float-start ps-xl-2 ps-md-0"><span>20 Apr 2023 - 10:45</span></p>
+                                </div>
+                                <div class="col-3 col-md-4">
+                                    <p class="float-end pe-xl-5 pe-lg-5 pe-md-5"><span class="statusUp">587 ms.</span></p>
+                                </div>
+                                <div class="col-4 col-md-4">
+                                    <p class="text-success float-end pe-5"><span class="statusUp">200</span></p> 
+                                </div>                               
+                            </div>
+                                                            
+                                                                                                
+                            <div class="row tableRow bg-light">
+                                <div class="tableRowData col-5 col-md-4">
+                                    <p class="float-start ps-xl-2 ps-md-0"><span>20 Apr 2023 - 09:06</span></p>
+                                </div>
+                                <div class="col-3 col-md-4">
+                                    <p class="float-end pe-xl-5 pe-lg-5 pe-md-5"><span class="statusUp">136 ms.</span></p>
+                                </div>
+                                <div class="col-4 col-md-4">
+                                    <p class="text-success float-end pe-5"><span class="statusUp">200</span></p> 
+                                </div>                               
+                            </div>
+                                                            
+                                                                                                
+                            <div class="row tableRow bg-light">
+                                <div class="tableRowData col-5 col-md-4">
+                                    <p class="float-start ps-xl-2 ps-md-0"><span>20 Apr 2023 - 08:16</span></p>
+                                </div>
+                                <div class="col-3 col-md-4">
+                                    <p class="float-end pe-xl-5 pe-lg-5 pe-md-5"><span class="statusUp">61 ms.</span></p>
+                                </div>
+                                <div class="col-4 col-md-4">
+                                    <p class="text-success float-end pe-5"><span class="statusUp">200</span></p> 
+                                </div>                               
+                            </div>
+                                                            
+                                                                                                
+                            <div class="row tableRow bg-light">
+                                <div class="tableRowData col-5 col-md-4">
+                                    <p class="float-start ps-xl-2 ps-md-0"><span>19 Apr 2023 - 11:23</span></p>
+                                </div>
+                                <div class="col-3 col-md-4">
+                                    <p class="float-end pe-xl-5 pe-lg-5 pe-md-5"><span class="statusUp">327 ms.</span></p>
+                                </div>
+                                <div class="col-4 col-md-4">
+                                    <p class="text-success float-end pe-5"><span class="statusUp">200</span></p> 
+                                </div>                               
+                            </div>
+                                                            
+                                                                                                
+                            <div class="row tableRow bg-light">
+                                <div class="tableRowData col-5 col-md-4">
+                                    <p class="float-start ps-xl-2 ps-md-0"><span>19 Apr 2023 - 10:59</span></p>
+                                </div>
+                                <div class="col-3 col-md-4">
+                                    <p class="float-end pe-xl-5 pe-lg-5 pe-md-5"><span class="statusUp">378 ms.</span></p>
+                                </div>
+                                <div class="col-4 col-md-4">
+                                    <p class="text-success float-end pe-5"><span class="statusUp">200</span></p> 
+                                </div>                               
+                            </div>
+                                                            
+                                                                                                
+                            <div class="row tableRow bg-light">
+                                <div class="tableRowData col-5 col-md-4">
+                                    <p class="float-start ps-xl-2 ps-md-0"><span>18 Apr 2023 - 19:34</span></p>
+                                </div>
+                                <div class="col-3 col-md-4">
+                                    <p class="float-end pe-xl-5 pe-lg-5 pe-md-5"><span class="statusUp">468 ms.</span></p>
+                                </div>
+                                <div class="col-4 col-md-4">
+                                    <p class="text-success float-end pe-5"><span class="statusUp">200</span></p> 
+                                </div>                               
+                            </div>
+                                                                                    
+                            <div class="row">
+                                <p><span class='span-small'>
+                                This table shows the <strong>datto.com</strong> outage requests and response browser checks executed automatically by the DownAU service.  All data in the table is in the <strong>UTC</strong> time zone. If <strong>Datto</strong> is down or slow for you. You can try using a VPN service(to try from a different location) and also check the Tips below
+                                </span></p>
+                            </div>
+        
+                        </div>
+        
+                    </article>
+                                                            
+                                                            <article id="info" class="row mt-5">
+                        <div class="col mt-5 mb-4">
+                            <div class="row mx-1 my-1">
+                                <h2 class="title-min">General Tips to Fix an Datto.com</h2>
+                            </div>
+                            <ul class="listInfo">
+                                                                <li>
+                                    <p><strong>Check your internet connection:</strong> Unstable connectivity can slow down or prevent your apps or websites from loading. Reset your modem or contact your ISP if necessary.</p>
+                                </li>
+                                                                <li>
+                                    <p><strong>Use another device:</strong> Try using a different computer or device to access your website or app to know if it’s a device issue.</p>
+                                </li>
+                                                                <li>
+                                    <p><strong>Restart your device:</strong> Restarting your device is very important. Simply turn off your device and wait a few minutes before turning it back on.</p>
+                                </li>
+                                                                <li>
+                                    <p><strong>Use a different browser:</strong> It's possible that the problem is with your browser. Try using a different one to diagnose the problem.</p>
+                                </li>
+                                                                <li>
+                                    <p><strong>Verify your URL:</strong> If you enter the wrong URL, the website may display an error page or it may direct you to a different site instead.</p>
+                                </li>
+                                                                <li>
+                                    <p><strong>Clear your cache:</strong> The cache stores frequently accessed data temporarily. Clear your cache by going to browser settings and selecting "clear browsing data". </p>
+                                </li>
+                                                                <li>
+                                    <p><strong>Try Incognito mode:</strong> This mode disables cookies and temporary cache automatically — so you would know immediately if you need to clear cache and cookies or not.</p>
+                                </li>
+                                                                <li>
+                                    <p><strong>Update your app:</strong> Developers often release updates to fix bugs and improve your app’s performance. 
+If you're having issues, check for available updates as it may solve your problem.</p>
+                                </li>
+                                                                <li>
+                                    <p><strong>Check for compatibility:</strong> Check if the app or website works with your device and operating system as an old device may cause issues.</p>
+                                </li>
+                                                                <li>
+                                    <p><strong>Use VPN Service:</strong> Your internet provider might block the website or app you want to access. Try a VPN to see if it works.</p>
+                                </li>
+                                                                <li>
+                                    <p><strong>Turn off your browser extensions:</strong> These can sometimes mess with apps and websites. If you're having issues, try turning off any extensions you've added.</p>
+                                </li>
+                                                                <li>
+                                    <p><strong>Check your firewall & antivirus:</strong> These can also prevent you from accessing certain websites or services. You can try temporarily turning them off to see if it fixes the issue.</p>
+                                </li>
+                                                                <li>
+                                    <p><strong>Disable ad-blockers:</strong> Ad-blockers can cause problems as well. Try to disable any ad-blockers you have installed and check if it fixes the problem.</p>
+                                </li>
+                                                                <li>
+                                    <p><strong>Uninstall & reinstall:</strong> This is for mobile apps encountering issues–try uninstalling and reinstalling it. This can clear up any corrupt files or settings.</p>
+                                </li>
+                                                                <li>
+                                    <p><strong>Update your device:</strong> Your device software may be outdated. Check the settings for updates to make sure your device software is up-to-date.</p>
+                                </li>
+                                                                <li>
+                                    <p><strong>Reset app or website settings:</strong> Certain apps and websites offer an option to reset their settings to default. Check the help section of the app or website to see if this is available.</p>
+                                </li>
+                                                                <li>
+                                    <p><strong>Check for malware:</strong> Malware can create problems with apps and websites. Install a trustworthy antivirus program on your device and scan for malware.</p>
+                                </li>
+                                                                <li>
+                                    <p><strong>Clear your DNS cache:</strong> Check if the app or website works with your device and operating system as an old device may cause issues.</p>
+                                </li>
+                                                            </ul>
+                        </div>                               
+                    </article>    
+                                        
+                                            
+                        <div class="comment_header">
+                            <h2>Join Datto Discussion</h2>
+                            Suggestions? Issues? Outages? <br> Please share your Datto experience with other users around the globe.
+                        </div>
+                        
+                        <div class="write_comment p-2">
+                            <textarea id="comment_content" class="form-control" rows="7" placeholder="Write your comment here..." required></textarea>
+                            <input id="comment_name" class="form-control" type="text" placeholder="Your Name" required>
+                            <button id="btn-comment" class="btn btn-primary" type="button">Add Comment</button>
+                            <p class="comment-status__error"></p>
+                        </div>
+                        <div id="comments">
+                         
+                          
+                        </div>
+                        <div class="block__show-more">
+                            <button id="btn__show-more" type="button" class="btn btn-light">More Comments</button>
+                        </div> 
+                        
+
+                    <script type="text/javascript">
+                        const comments = document.getElementById("comments");
+                        const commentsBtn = document.getElementById("btn__show-more");
+                        if(comments.clientHeight > 500){
+                            commentsBtn.style.visibility = "visible";
+                        }
+                        const n = document.getElementById("comments");
+                        const o = document.getElementById("btn__show-more");
+                        o.addEventListener("click", function () {
+                            n.style.maxHeight = "none"; 
+                            o.style.display = "none"                
+                        })
+                    </script>
+                    
+
+               
+                    <script type="text/javascript">
+                    $("#btn-comment").on("click", function (event) {
+                            
+                            var request_comment;
+                            mp = '/comment-save/359';
+                            // console.log('comment btn click');
+
+                            request_comment = $.ajax({
+                                url: mu + mp,
+                                method: "POST",
+                                data:
+                                {
+                                    token: "8323881364c54dbf6cf770ee0a1f1faf8ad44b40bac48bd45d9a18c5ab882bd8c050b1",
+                                    name: $.trim($("#comment_name").val()),
+                                    content: $.trim($("#comment_content").val())
+                                },
+                                datatype: "json"
+                            });
+                            request_comment.done(function(response) {
+                                // let response = JSON.parse(data);
+                                if(response.status == 'success') {
+                                    console.log('add comment');
+                                    // const countryWords = text.toLowerCase(response.comment.country_code) 
+                                    let html_str = `
+                                    <div class="comment p-2 border-bottom">
+                                        <div>
+                                            <img src="https://downau.com/static/flags/${response.comment.country_code.toLowerCase()}.svg" class="float-start" alt="${response.comment.country_code} Flag Icon">
+                                            <p class="name"><strong>${response.comment.name}</strong></p>
+                                            <span>${response.comment.city_name}, ${response.comment.country_name}</span>
+                                            <span>•</span>
+                                            <span class="date">Just Now</span>
+                                        </div>
+                                        <p class="content">${response.comment.content}</p>
+                                    </div>
+                                    `;
+
+                                    $("#comments").prepend($(html_str).fadeIn('slow'));
+                                } else if(response.status == 'limit') {
+                                    document.querySelector('.comment-status__error').innerHTML = "Recently added";
+                                    console.log('recently added'); 
+                                } else if(response.status == 'invalid_ip') {
+                                    document.querySelector('.comment-status__error').innerHTML = "Invalid ip address";
+                                    console.log('invalid ip address'); 
+                                } else {
+                                    document.querySelector('.comment-status__error').innerHTML = "Failed";
+                                    console.log('failed'); 
+                                }
+                                
+                            });
+                            request_comment.fail(function(jqXHR, textStatus) {
+                                // $("#result").html("Request failed");
+                                console.log('failed');
+                            });
+                        });
+                    </script>
+                    
+                                        
+                    
+                </div>    
+                
+                
+                <!-- end left bar -->
+
+                <!-- right bar -->
+                <div id="right-content" class="col-4">
+                    <article class="row">
+                        <div class="col-2 mt-4"></div>
+                        <div class="col-10 mt-4" style="width: 280px;">
+                                                                                <div id="imgSiteCheching">
+                                <img class="lazyload" data-src="https://downau.com/static/screenshots/datto.com-screenshot.png" alt="Latest datto.com screenshot" style ="width:251px; height: auto;">
+                            </div>
+                                                                                                            
+
+
+                                                <div class="rating_header">
+                            Rate your experience with <strong>Datto</strong> uptime performance over the last 30 days 
+                        </div>
+
+                       
+                        
+                        <div class="rate_service">
+                            <div id="transform-rotateY" class="transform-rotateY">
+                                                            
+                                    <button id="btnRating5" type="button" class="btnRating" data_rating="5" data-bs-toggle="tooltip" data-bs-placement="top" title="Stars">
+                                        
+                                            <img class="img-star" src="https://downau.com/static/img/star.png" alt="star" data_rating="5">
+                                        <div class="block-star">    
+                                            <img class="img-star_yellow" src="https://downau.com/static/img/star-yellow.png" alt="star-yellow" data_rating="5">
+                                        </div>
+                                    </button>
+                                                 
+                                                            
+                                    <button id="btnRating4" type="button" class="btnRating" data_rating="4" data-bs-toggle="tooltip" data-bs-placement="top" title="Stars">
+                                        
+                                            <img class="img-star" src="https://downau.com/static/img/star.png" alt="star" data_rating="4">
+                                        <div class="block-star">    
+                                            <img class="img-star_yellow" src="https://downau.com/static/img/star-yellow.png" alt="star-yellow" data_rating="4">
+                                        </div>
+                                    </button>
+                                                 
+                                                            
+                                    <button id="btnRating3" type="button" class="btnRating" data_rating="3" data-bs-toggle="tooltip" data-bs-placement="top" title="Stars">
+                                        
+                                            <img class="img-star" src="https://downau.com/static/img/star.png" alt="star" data_rating="3">
+                                        <div class="block-star">    
+                                            <img class="img-star_yellow" src="https://downau.com/static/img/star-yellow.png" alt="star-yellow" data_rating="3">
+                                        </div>
+                                    </button>
+                                                 
+                                                            
+                                    <button id="btnRating2" type="button" class="btnRating" data_rating="2" data-bs-toggle="tooltip" data-bs-placement="top" title="Stars">
+                                        
+                                            <img class="img-star" src="https://downau.com/static/img/star.png" alt="star" data_rating="2">
+                                        <div class="block-star">    
+                                            <img class="img-star_yellow" src="https://downau.com/static/img/star-yellow.png" alt="star-yellow" data_rating="2">
+                                        </div>
+                                    </button>
+                                                 
+                                                            
+                                    <button id="btnRating1" type="button" class="btnRating" data_rating="1" data-bs-toggle="tooltip" data-bs-placement="top" title="Stars">
+                                        
+                                            <img class="img-star" src="https://downau.com/static/img/star.png" alt="star" data_rating="1">
+                                        <div class="block-star">    
+                                            <img class="img-star_yellow" src="https://downau.com/static/img/star-yellow.png" alt="star-yellow" data_rating="1">
+                                        </div>
+                                    </button>
+                                                 
+                                                        </div>
+                            
+
+                        </div>
+                        <div class="container mt-3">
+
+                                                    <div class="rating">
+                                Rating: <span id="ratingValue">3</span>, Votes: 1                            </div>
+                        
+                        <script type="text/javascript">
+                        const n1 = document.querySelector('[data_rating="1"]')
+                        n1.title = "I hate it";
+                        const n2 = document.querySelector('[data_rating="2"]')
+                        n2.title = "I don't like it";
+                        const n3 = document.querySelector('[data_rating="3"]')
+                        n3.title = "I'ts okay";
+                        const n4 = document.querySelector('[data_rating="4"]')
+                        n4.title = "I like it";
+                        const n5 = document.querySelector('[data_rating="5"]')
+                        n5.title = "I love it";
+
+                        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                        return new bootstrap.Tooltip(tooltipTriggerEl)
+                        })
+
+                        const ratingValueTag = document.getElementById("ratingValue");
+                        if(typeof ratingValue === "Null"){
+                            var ratingValue = 0;
+                        }
+                        else{
+                            var ratingValue = "3";
+                        }
+                        if(ratingValue >= 5){ratingValue = 4.99}
+
+                        const ratingValueNumber = Math.trunc(ratingValue);
+                        const ratingValueFraction = Math.round((ratingValue - ratingValueNumber) * 100);
+                        
+                        const ratingValueArray = ["btnRating1","btnRating2","btnRating3","btnRating4","btnRating5","btnRating5"];
+                        const starID = ratingValueArray[ratingValueNumber];
+                        document.getElementById(starID).classList.add('hover-star');
+                        document.querySelector(`#${starID} .block-star`).style.width = `${ratingValueFraction}%`;
+                        
+                        const starsOver = document.getElementById("transform-rotateY");
+                        starsOver.addEventListener("mouseover", (event) => {
+                        document.getElementById(starID).classList.remove('hover-star');
+                        document.querySelector(`#${starID} .block-star`).style.width = "100%";                      
+                        });
+                        starsOver.addEventListener("mouseout", (event) => {
+                        document.getElementById(starID).classList.add('hover-star');
+                        document.querySelector(`#${starID} .block-star`).style.width = `${ratingValueFraction}%`;
+                        });   
+                        
+                        
+                        </script>
+
+                       
+
+                        <script type="text/javascript">
+                        $(".btnRating").on("click", function (event) {
+                                
+                                var request_rating;
+                                var rating = $(event.target).attr("data_rating"); 
+                                console.log('rating click '+$(event.target).attr("data_rating"));
+
+                                mp = '/rating-save/359';
+
+                                request_rating = $.ajax({
+                                    url: mu + mp,
+                                    method: "POST",
+                                    data:
+                                    {
+                                        token: "8323881364c54dbf6cf770ee0a1f1faf8ad44b40bac48bd45d9a18c5ab882bd8c050b1",
+                                        rating: rating
+                                    },
+                                    datatype: "json"
+                                });
+                                request_rating.done(function(response) {
+                                    // let response = JSON.parse(data);
+                                    if(response.status == 'success') {
+                                        console.log('add comment'); 
+                                        console.log(response.minutes); 
+                                        let html_str = `Thank you`;
+
+                                        $(".rate_service").html(html_str);
+                                    } else if(response.status == 'limit') {
+                                        console.log(response.minutes);
+                                        console.log('recently added'); 
+                                    } else if(response.status == 'invalid_ip') {
+                                        console.log('invalid ip address'); 
+                                    } else {
+                                        console.log('failed 2'); 
+                                    }
+                                    
+                                });
+                                request_rating.fail(function(jqXHR, textStatus) {
+                                    // $("#result").html("Request failed");
+                                    console.log('failed 1');
+                                });
+                            });
+                        </script>
+                        
+                                                        <div class="row">
+                                <div id="rightProblemBox" class="col border border-3">
+                                    <div class="col mt-3 mb-4">                                   
+                                        <div class="row mt-2">
+                                            <p>Submit your complains here:</p>
+                                        </div>
+                                                                                <div class="row">
+                                            <div class="mt-2 ms-3">
+                                                <img src="/static/img/twitter.svg" alt="" width="20" height="20" class="float-start mt-2 me-2">
+                                                <p><span class="span-small float-start mt-1">Via  |</span></p>
+                                                <a target='_blank' rel='noopener noreferrer nofollow' type="button" class="aButton btn btn-sm ms-2" href="https://twitter.com/datto">Twitter</a>
+                                            </div>
+                                        </div>
+                                                                                                                        <div class="row">
+                                            <div class="mt-2 ms-3">   
+                                                <img src="/static/img/facebook.svg" alt="" width="20" height="20" class="float-start mt-2 me-2">                                    
+                                                <p><span class="span-small float-start mt-1">Via  |</span></p>
+                                            <a target='_blank' rel='noopener noreferrer nofollow' type="button" class="aButton  btn btn-sm ms-2" href="https://www.facebook.com/112747718801438">Facebook</a>
+                                            </div>                                        
+                                        </div>
+                                                                                                                    </div>                                  
+                                </div>                                
+                            </div>
+                                                        <div id="sites-checked__box" class="row mt-3">                             
+                                <div class="col">
+
+                                    <ul class="sites-checked__list">
+                                        <li class="border-bottom">
+                                            <p><strong>Recently Down</strong></p>
+                                        </li>                        
+                                                
+                                                   
+                                        <li>
+                                            <p><a href="https://downau.com/status/freshservice.com">freshservice.com</a></p>
+                                            <p><span class="span-small">Check Freshservice Server Status.</span></p>
+                                        </li>                                        
+                                                
+                                                   
+                                        <li>
+                                            <p><a href="https://downau.com/status/blackboard.com">blackboard.com</a></p>
+                                            <p><span class="span-small">Check Blackboard Server Status.</span></p>
+                                        </li>                                        
+                                                
+                                                   
+                                        <li>
+                                            <p><a href="https://downau.com/status/edx.org">edx.org</a></p>
+                                            <p><span class="span-small">Check edX Server Status.</span></p>
+                                        </li>                                        
+                                                
+                                                   
+                                        <li>
+                                            <p><a href="https://downau.com/status/pozible.com">pozible.com</a></p>
+                                            <p><span class="span-small">Check Pozible Server Status.</span></p>
+                                        </li>                                        
+                                                
+                                                   
+                                        <li>
+                                            <p><a href="https://downau.com/status/starlink.com">starlink.com</a></p>
+                                            <p><span class="span-small">Check Starlink Server Status.</span></p>
+                                        </li>                                        
+                                                
+                                                   
+                                        <li>
+                                            <p><a href="https://downau.com/status/datto.com">datto.com</a></p>
+                                            <p><span class="span-small">Check Datto Server Status.</span></p>
+                                        </li>                                        
+                                                                            </ul>  
+
+                                                                        <ul class="sites-checked__list">
+                                        <li class="border-bottom">
+                                            <p><strong>Popular sites</strong></p>
+                                        </li>                                      
+                                               
+                                                      
+                                        <li>
+                                            <p><a href="https://downau.com/status/datto.com">datto.com</a></p>
+                                            <p><span class="span-small">Check Datto Server Status.</span></p>
+                                        </li>                                        
+                                               
+                                                      
+                                        <li>
+                                            <p><a href="https://downau.com/status/starlink.com">starlink.com</a></p>
+                                            <p><span class="span-small">Check Starlink Server Status.</span></p>
+                                        </li>                                        
+                                               
+                                                      
+                                        <li>
+                                            <p><a href="https://downau.com/status/pozible.com">pozible.com</a></p>
+                                            <p><span class="span-small">Check Pozible Server Status.</span></p>
+                                        </li>                                        
+                                               
+                                                      
+                                        <li>
+                                            <p><a href="https://downau.com/status/trakt.tv">trakt.tv</a></p>
+                                            <p><span class="span-small">Check Trakt Server Status.</span></p>
+                                        </li>                                        
+                                               
+                                                      
+                                        <li>
+                                            <p><a href="https://downau.com/status/mitel.com">mitel.com</a></p>
+                                            <p><span class="span-small">Check Mitel Server Status.</span></p>
+                                        </li>                                        
+                                               
+                                                      
+                                        <li>
+                                            <p><a href="https://downau.com/status/edx.org">edx.org</a></p>
+                                            <p><span class="span-small">Check edX Server Status.</span></p>
+                                        </li>                                        
+                                               
+                                                      
+                                        <li>
+                                            <p><a href="https://downau.com/status/blackboard.com">blackboard.com</a></p>
+                                            <p><span class="span-small">Check Blackboard Server Status.</span></p>
+                                        </li>                                        
+                                               
+                                                      
+                                        <li>
+                                            <p><a href="https://downau.com/status/dochub.com">dochub.com</a></p>
+                                            <p><span class="span-small">Check DocHub Server Status.</span></p>
+                                        </li>                                        
+                                               
+                                                      
+                                        <li>
+                                            <p><a href="https://downau.com/status/zetta.net.au">zetta.net.au</a></p>
+                                            <p><span class="span-small">Check Zettanet Server Status.</span></p>
+                                        </li>                                        
+                                               
+                                                      
+                                        <li>
+                                            <p><a href="https://downau.com/status/bitchute.com">bitchute.com</a></p>
+                                            <p><span class="span-small">Check BitChute Server Status.</span></p>
+                                        </li>                                        
+                                                                            </ul> 
+                                       
+
+                                                                    </div>                                                                                                                                      
+                            </div>                                                
+                        </div>
+                    </article>
+                </div>    
+                <!-- end right bar -->
+                
+                </div>
+            </div>
+
+            <!-- Pre-footer Content -->
+            <div class="container">
+                <article class="row mt-5">
+
+                                                            <div id="block-faq" class="col-8">
+                        <div class="row">
+                            <h2 class="title-min">Frequently Asked Questions</h2>
+                        </div>
+                        <div class="row bg-light">
+            
+                            <!-- accordions  -->
+            
+                            <div class="accordion" id="accordionFAQ">
+
+                                                                <div class="accordion-item border-bottom">
+                                    <h3 class="accordion-header text-primary" id="heading0">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse0" aria-expanded="true" aria-controls="collapse0">
+                                            <strong>Did Datto go down?</strong>
+                                        </button>
+                                    </h3>
+                                    <div id="collapse0" class="accordion-collapse collapse show" aria-labelledby="heading0" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                        <p>We have recently sent browser requests to Datto.com and it's up and running with <span class="spanBlue">status code 200 (UP)</span>
+    and a response <span class="spanBlue">time of 244 ms</span>. We recommend clearing your cache or restarting/updating your app.</p>                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="accordion-item border-bottom">
+                                    <h3 class="accordion-header text-primary" id="heading1">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                            <strong>Why is Datto so slow?</strong>
+                                        </button>
+                                    </h3>
+                                    <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                        If your Datto, is running slow, it could be because of various reasons such as an old version, bad internet connectivity, or it could not be working properly with your device.<br><br>
+We suggest updating it and disabling extensions or ad-blockers. You can also try using a different browser.                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="accordion-item border-bottom">
+                                    <h3 class="accordion-header text-primary" id="heading2">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                            <strong>Why do I keep getting error messages?</strong>
+                                        </button>
+                                    </h3>
+                                    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                        If you see an error message from Datto, it could be because of different problems such as server issues, outdated software, or compatibility problems.<br><br>
+To fix it, check if there is an update available for the app or website. Also, make sure your device's software is up to date.                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="accordion-item border-bottom">
+                                    <h3 class="accordion-header text-primary" id="heading3">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                            <strong>Can you explain HTTP response status codes?</strong>
+                                        </button>
+                                    </h3>
+                                    <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                        HTTP response status code is a 3-digit number that tells you if a request to a website or app was successful or not.<br><br>
+There are four types of codes: <strong>2XX (successful)</strong>, <strong>3XX (redirect)</strong>, <strong>4XX (browser error)</strong>, and <strong>5XX (server error)</strong>.<br><br>
+These codes help developers and users know what's happening and what to do next if there's a problem.                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="accordion-item border-bottom">
+                                    <h3 class="accordion-header text-primary" id="heading4">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                            <strong>What does "HTTP response time" mean?</strong>
+                                        </button>
+                                    </h3>
+                                    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                        The HTTP response time technically measures how much time it takes for a website to load after you click on a link or type in its web address.<br><br>
+Knowing about HTTP response time can help you identify slow-loading websites and take action to improve your browsing experience.<br><br>                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="accordion-item border-bottom">
+                                    <h3 class="accordion-header text-primary" id="heading5">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                            <strong>Why is my app or website not loading any content/media?</strong>
+                                        </button>
+                                    </h3>
+                                    <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                        When you can't load any content on Datto, it might be due to slow internet or issues with the content provider. Try to reset your router to improve your connectivity.                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="accordion-item border-bottom">
+                                    <h3 class="accordion-header text-primary" id="heading6">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                            <strong>Why am I having issues during peak usage times?</strong>
+                                        </button>
+                                    </h3>
+                                    <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                        When many people are using Datto's app or website at the same time, it can cause issues. Try using it again during less busy times. You can also try using Incognito mode to see if it works.                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="accordion-item border-bottom">
+                                    <h3 class="accordion-header text-primary" id="heading7">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                            <strong>Why am I the only one having trouble accessing my app or website?</strong>
+                                        </button>
+                                    </h3>
+                                    <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                        Sometimes, you may have trouble using it due to issues with its code or design. Try changing your device's accessibility settings or you can also try using a different browser or device.                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="accordion-item border-bottom">
+                                    <h3 class="accordion-header text-primary" id="heading8">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                                            <strong>Why can't I log in or access my account?</strong>
+                                        </button>
+                                    </h3>
+                                    <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                        It could be because of wrong login information or problems with the app or website's code. Try resetting your password, checking your login details, or reaching out to their customer support for help.                                        </div>
+                                    </div>
+                                </div>
+                                                                <div class="accordion-item border-bottom">
+                                    <h3 class="accordion-header text-primary" id="heading9">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                                            <strong>What else can I do if the problem still exists after trying all the tips here?</strong>
+                                        </button>
+                                    </h3>
+                                    <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                        If all else fails, please feel free to report the problem to us so we can investigate it further. You may also check if other users are facing the same issue on our website.                                        </div>
+                                    </div>
+                                </div>
+                                                            </div>
+
+                            <!-- end accordions  -->
+
+                        </div>
+                            
+                    </div>
+
+                                        
+                    
+                </article>
+            </div>
+                    
+    
+            <!-- end pre-footer content -->
+            
+    </div>  
+    <!-- and main container -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://downau.com/static/au/ex/js/report-problem.js"></script>
+    
+
+
+        <!-- footer -->
+
+        <div id="footer-box">
+                    <section>
+                        <p class="footer-content">&copy; 2023 <a href="https://downau.com/">downau.com</a>. All Right Reserved. 
+                        <strong><a href="https://downau.com/about">About</a> • <a href="https://downau.com/privacy">Privacy</a> • <a href="https://downau.com/sitemap">Sitemap</a></strong></p>
+                    </section>
+        </div>
+          
+        <!-- end footer --> 
+        
+    </body>
+</html>
