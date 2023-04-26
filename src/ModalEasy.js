@@ -5,6 +5,14 @@ import { useState } from 'react';
 
 
 export default function BasicModal() {
+  let phraseClose = "phraseClose";
+  let phraseIssue = "phraseIssue";
+  let phraseThankFeed = "phraseThankFeed";
+  let phraseThankCom = "phraseThankCom";
+  let phraseWrite = "phraseWrite";
+  let phraseName = "phraseName";
+  let phraseWantCom = "phraseWantCom";
+  let phraseSend = "phraseSend";
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -61,14 +69,14 @@ export default function BasicModal() {
     if(activeIndex){
     return (
       <>        
-        <p>Thank You For Feedback!</p>
-        <p>Want to leave a comment?</p>
-        <textarea rows="7" className="modul-intup" placeholder="Write your comment here..." ref={contentSend}/>
-        <input className="modul__form-control" type="text" placeholder="Your Name" ref={nameSend}></input>
+        <p>{phraseThankFeed}</p>
+        <p>{phraseWantCom}</p>
+        <textarea rows="7" className="modul-intup" placeholder={phraseWrite} ref={contentSend}/>
+        <input className="modul__form-control" type="text" placeholder={phraseName} ref={nameSend}></input>
         <button className="send-button" type="submit" onClick={() => {
           commentSend(); 
           setactiveIndex(false);
-          }}>Send</button>
+          }}>{phraseSend}</button>
         <p className="comment-status__error"></p>
       </>
       );
@@ -77,7 +85,7 @@ export default function BasicModal() {
   function Thank() {
     if(activeIndex === false){
       return (
-        <p>Thank You For Comment!</p>
+        <p>{phraseThankCom}</p>
       )
     }
   }
@@ -89,7 +97,7 @@ export default function BasicModal() {
         <section className={`modal-block ${open ? 'show' : 'hidden'}`}>
           <div className='modal-content'>
             <div className='modal-header'>
-              <h2 className="modal-title">Report an issue</h2><button className='close-letter' onClick={handleClose}>+</button>
+              <h2 className="modal-title">{phraseIssue}</h2><button className='close-letter' onClick={handleClose}>+</button>
             </div> 
             <div className='modal-body'>
 
@@ -98,7 +106,7 @@ export default function BasicModal() {
 
             </div>
             <div className='modal-footer'>
-              <button className='close-button' onClick={handleClose}>Close</button>
+              <button className='close-button' onClick={handleClose}>{phraseClose}</button>
             </div>  
           </div>
         </section>

@@ -4,7 +4,7 @@ import './index.css';
 import ModalEasy from './ModalEasy.js';
 
 
-const root = ReactDOM.createRoot(document.getElementById('reportproblemeasy'));
+const root = ReactDOM.createRoot(document.getElementById('report-problem-easy'));
 root.render(
     <ModalEasy />
 );
